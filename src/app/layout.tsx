@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "BiMoji — Emoții pentru fiecare conversație",
   description:
-    "BiMoji by EstetticByBi. O colecție delicată de stickere emoji pentru fiecare conversație.",
+    "BiMoji. O colecție delicată de stickere emoji pentru fiecare conversație.",
 };
 
 export default function RootLayout({

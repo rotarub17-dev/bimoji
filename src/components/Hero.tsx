@@ -7,11 +7,6 @@ export default function Hero() {
       <div className="pointer-events-none absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-gold-200/30 blur-3xl" />
 
       <div className="relative mx-auto max-w-3xl">
-        <p className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-sm font-medium text-rose-500 shadow-sm backdrop-blur-sm">
-          <span className="h-2 w-2 animate-pulse rounded-full bg-blush-400" />
-          by EstetticByBi
-        </p>
-
         <h1 className="font-display text-7xl font-bold leading-none tracking-tight md:text-9xl">
           <span className="text-gradient">BiMoji</span>
         </h1>

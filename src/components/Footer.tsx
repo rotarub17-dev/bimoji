@@ -9,7 +9,7 @@ export default function Footer() {
           </span>
         </div>
         <p className="mt-3 text-sm text-rose-400/80">
-          Emoții pentru fiecare conversație — by EstetticByBi
+          Emoții pentru fiecare conversație
         </p>
         <p className="mt-6 text-xs text-rose-300/70">
           © {new Date().getFullYear()} BiMoji. Toate drepturile rezervate.
