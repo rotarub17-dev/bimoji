@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --background: #FFFBF7;
+  --foreground: #4A3530;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #FFFBF7 0%, #FFF5F7 50%, #FBF0EE 100%);
+  color: var(--foreground);
+  font-family: 'Poppins', system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blush-400 to-rose-300 px-8 py-3.5 font-medium text-white shadow-lg shadow-blush-300/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blush-400/50 active:scale-95;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-rose-200 bg-white/70 px-8 py-3.5 font-medium text-rose-500 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:border-rose-300 hover:bg-white active:scale-95;
+  }
+  .chip {
+    @apply inline-flex cursor-pointer items-center rounded-full px-5 py-2.5 text-sm font-medium transition-all duration-300;
+  }
+  .chip-active {
+    @apply bg-gradient-to-r from-blush-400 to-rose-300 text-white shadow-md shadow-blush-300/50 scale-105;
+  }
+  .chip-idle {
+    @apply bg-white/70 text-rose-500 border border-rose-100 hover:border-rose-300 hover:bg-white hover:scale-105;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-rose-400 via-blush-400 to-gold-300 bg-clip-text text-transparent;
+  }
+  .glass {
+    @apply bg-white/60 backdrop-blur-md border border-white/50;
+  }
+}
